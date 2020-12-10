@@ -26,7 +26,7 @@
   // @ is an alias to /src
   //import UserNavigation from '@/components/module_menus/UserNavigation.vue'
 
-
+import { mapState, mapActions, mapGetters } from "vuex";
 
   export default {
     name: 'dashboard',
