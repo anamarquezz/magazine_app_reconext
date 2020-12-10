@@ -64,7 +64,7 @@ export default new Vuex.Store({
         {
           id:3,
           seccion:'programas',
-          descripcion:'PROGRAMAS, Donacion interna computadores',        
+          descripcion:'PROGRAMAS, DONACION INTERNA COMPUTADORAS',        
           style:{
             background:'#355EA8',
             color:"white"
@@ -136,7 +136,7 @@ export default new Vuex.Store({
         {
           id:11,
           seccion:'Salud',
-          descripcion:'COMO ME PREVENGO, Cancer de mama',                  
+          descripcion:'COMO ME PREVENGO, CANCER DE MAMA',                  
           style:{
             background:'#355EA8',
             color:"white"
@@ -145,7 +145,7 @@ export default new Vuex.Store({
         {
           id:12,
           seccion:'proximamente',
-          descripcion:'PROXIMAMENTE !',        
+          descripcion:'PROXIMAMENTE!',        
           style:{
             background:'#373737',
             color:"white"

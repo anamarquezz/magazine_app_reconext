@@ -1,7 +1,5 @@
 <template>
-  <div class="">
-    seccion:
-  </div>
+  <flipbook class="flipbook" :pages="['array', 'of', 'image', 'URLs']"></flipbook>
 </template>
 
 <script>
@@ -14,17 +12,20 @@
     mapGetters
   } from "vuex";
 
+import Flipbook from 'flipbook-vue'
   export default {
     name: 'dashboard',
-    components: {},
+    components: {
+      Flipbook
+    },
     computed: {
       ...mapState({
         secciones: "secciones"
       })
     },
     methods: {
-      click_seccion(pagina) {
-          this.$router.push('/revista');     
+      actionpage(value) {
+        this.$router.push('/revista');
       },
 
     }
@@ -43,7 +44,7 @@
 
 
   .card {
-     background-color: #eee;    
+    background-color: #eee;
     height: 99%;
     display: flex;
     margin: 1px;
@@ -61,4 +62,11 @@
       opacity: 1
     }
   }
+
+
+.flipbook {
+  width: 90vw;
+  height: 90vh;
+}
+
 </style>

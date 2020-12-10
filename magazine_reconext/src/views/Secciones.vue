@@ -113,6 +113,11 @@
     flex-direction: column;
   }
 
+  .card:hover{
+    transform:scale(1.3);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
 
   @keyframes cardAnim {
     0% {
