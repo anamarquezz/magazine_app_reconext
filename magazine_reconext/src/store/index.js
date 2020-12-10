@@ -10,98 +10,146 @@ export default new Vuex.Store({
         id:1,
         nombre:'Diciembre',
         edicion:'1',
-        background:'#12006F'
+        style:{
+          background:'#12006F',
+          color:'white'
+        }
       },
       {
         id:2,
         nombre:'Enero',
-        edicion:'2',
-        background:'#31BF7B'
+        edicion:'2',       
+        style:{
+          background:'#31BF7B',
+          color:'white'
+        }
       },
       {
         id:3,
         nombre:'Febrero',
-        edicion:'3',
-        background:'#12006F'
+        edicion:'3',        
+        style:{
+          background:'#12006F',
+          color:'white'
+        }
       },
       {
         id:4,
         nombre:'Marzo',
-        edicion:'4',
-        background:'#31BF7B'
+        edicion:'4',      
+        style:{
+          background:'#12006F',
+          color:'white'
+        }
       }],
       secciones:[
         {
           id:1,
           seccion:'lideres',
           descripcion:'NUESTROS LIDERES',        
-          background:'#12006F'
+          style:{
+            background:'#355EA8',
+            color:"white"
+          }
         },
         {
           id:2,
           seccion:'nosete',
-          descripcion:'QUE NO SE TE OLVIDE',        
-          background:'#12006F'
+          descripcion:'QUE NO SE TE OLVIDE',                 
+          style:{
+            background:'#373737',
+            color:"white"
+          }
         },
         {
           id:3,
           seccion:'programas',
           descripcion:'PROGRAMAS, Donacion interna computadores',        
-          background:'#12006F'
+          style:{
+            background:'#355EA8',
+            color:"white"
+          }
         },
         {
           id:4,
           seccion:'yosoy',
           descripcion:'YO SOY RECONEXT',        
-          background:'#12006F'
+          style:{
+            background:'#373737',
+            color:"white"
+          }
         },
         {
           id:5,
           seccion:'sabias',
           descripcion:'¿SABIAS QUE?',        
-          background:'#12006F'
+          style:{
+            background:'#373737',
+            color:"white"           
+          }
         },
         {
           id:6,
           seccion:'mundo',
           descripcion:'ALREDEDOR DEL MUNDO',        
-          background:'#12006F'
+          style:{
+            background:'#45AD51',
+            color:"white"
+          }
         },
         {
           id:7,
           seccion:'seguridad',
           descripcion:'ASEGURA TU SEGURIDAD',        
-          background:'#12006F'
+          style:{
+            background:'#373737',
+            color:"white"
+          }
         },
         {
           id:8,
           seccion:'vacantes',
           descripcion:'VACANTES',        
-          background:'#12006F'
+          style:{
+            background:'#45AD51',
+            color:"white"
+          }
         },
         {
           id:9,
           seccion:'trabajamosjuntos',
           descripcion:'TRABAJAMOS JUNTOS',        
-          background:'#12006F'
+          style:{
+            background:'#355EA8',
+            color:"white"
+          }
         },
         {
           id:10,
           seccion:'anuncios',
           descripcion:'ANUNCIOS',        
-          background:'#12006F'
+          style:{
+            background:'#373737',
+            color:"white"
+          }
         },
         {
           id:11,
           seccion:'Salud',
           descripcion:'COMO ME PREVENGO, Cancer de mama',                  
-          background:'#12006F'
+          style:{
+            background:'#355EA8',
+            color:"white"
+          }
         },
         {
           id:12,
           seccion:'proximamente',
           descripcion:'PROXIMAMENTE !',        
-          background:'#12006F'
+          style:{
+            background:'#373737',
+            color:"white"
+          }
         }
       ]
   },
