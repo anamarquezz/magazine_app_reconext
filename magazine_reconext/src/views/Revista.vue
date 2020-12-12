@@ -1,5 +1,7 @@
 <template>
-  <flipbook class="flipbook" :pages="['array', 'of', 'image', 'URLs']"></flipbook>
+<div id="all">
+    <flipbook class="flipbook" :pages="['array', 'of', 'image', 'URLs']"></flipbook>
+</div>
 </template>
 
 <script>
