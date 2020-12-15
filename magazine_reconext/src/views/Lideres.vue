@@ -6,7 +6,7 @@
         <h3>NUESTROS LIDERES</h3>
       </div>
       <div class="cards">
-        <div class="card" v-for="lider in lideres" :key="lider.id" @click="seleccionadoClick(lider)">
+        <div class="card" v-for="lider in lideres" :key="lider.id">
           <div class="top-card">
             <img class="top-card-img" src="@/assets/img/boss.png">
           </div>
@@ -17,10 +17,10 @@
         </div>
       </div>
       <div class="numero-pagina">
-        <p  @click="clickHoja('secciones')">Página 1</p>
+        <p>Página 3</p>
       </div>
     </div>
-    <div class="div-der child " >
+    <!--div class="div-der child ">
       <div>
         <div class="titulo">
           <h3>{{seleccionado.nombre.toUpperCase()}}</h3>
@@ -47,7 +47,7 @@
         </div>
       </div>
 
-    </div>
+    </div-->
 
   </div>
 </template>
@@ -94,5 +94,5 @@
 </script>
 <style lang="scss" scoped>
   @import "../assets/css/lideres.css";
-
+    @import "../assets/css/global.css";
 </style>

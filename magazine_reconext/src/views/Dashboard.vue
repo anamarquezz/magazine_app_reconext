@@ -66,7 +66,7 @@
     },
     methods: {
       click_revista() {
-        this.$router.push('/secciones');
+        this.$router.push('/revista');
       },
 
     }

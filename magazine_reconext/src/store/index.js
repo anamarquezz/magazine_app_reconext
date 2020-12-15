@@ -47,105 +47,119 @@ export default new Vuex.Store({
           id:1,
           seccion:'lideres',
           descripcion:'NUESTROS LIDERES',        
+          pagina:3,
           style:{
-            background:'#355EA8',
+            background:'#0070C0',
             color:"white"
           }
+          
         },
         {
           id:3,
           seccion:'nosete',
           descripcion:'QUE NO SE TE OLVIDE',                 
+          pagina:4,
           style:{
-            background:'#373737',
+            background:'rgb(65, 95, 134) ',
             color:"white"
           }
         },
         {
           id:5,
           seccion:'programas',
-          descripcion:'PROGRAMAS, DONACION INTERNA COMPUTADORAS',        
+          descripcion:'PROGRAMAS, DONACION INTERNA COMPUTADORAS',
+          pagina:5,        
           style:{
-            background:'#355EA8',
+            background:'#373737',
             color:"white"
           }
         },
         {
           id:7,
           seccion:'yosoy',
-          descripcion:'YO SOY RECONEXT',        
+          descripcion:'YO SOY RECONEXT',   
+          pagina:6,     
           style:{
-            background:'#373737',
+            background:'#0070C0',
             color:"white"
           }
         },
         {
           id:9,
-          seccion:'sabias',
+          seccion:'sabias',          
           descripcion:'¿SABIAS QUE?',        
+          pagina:7,
           style:{
-            background:'#373737',
+            background:'rgb(65, 95, 134) ',
             color:"white"           
           }
         },
         {
           id:11,
           seccion:'mundo',
-          descripcion:'ALREDEDOR DEL MUNDO',        
+         
+          descripcion:'ALREDEDOR DEL MUNDO',  
+          pagina:8,     
           style:{
-            background:'#45AD51',
+            background:'#373737',
             color:"white"
           }
         },
         {
           id:13,
           seccion:'seguridad',
-          descripcion:'ASEGURA TU SEGURIDAD',        
+          descripcion:'ASEGURA TU SEGURIDAD',  
+          pagina:9,          
           style:{
-            background:'#373737',
+            background:'#0070C0',
             color:"white"
           }
         },
         {
           id:15,
           seccion:'vacantes',
-          descripcion:'VACANTES',        
+          descripcion:'VACANTES',
+          pagina:10,          
           style:{
-            background:'#45AD51',
+            background:'rgb(65, 95, 134) ',
             color:"white"
           }
         },
         {
           id:17,
           seccion:'trabajamosjuntos',
-          descripcion:'TRABAJAMOS JUNTOS',        
-          style:{
-            background:'#355EA8',
-            color:"white"
-          }
-        },
-        {
-          id:19,
-          seccion:'anuncios',
-          descripcion:'ANUNCIOS',        
+          descripcion:'TRABAJAMOS JUNTOS',
+          pagina:11,          
           style:{
             background:'#373737',
             color:"white"
           }
         },
         {
+          id:19,
+          seccion:'anuncios',
+          descripcion:'ANUNCIOS',   
+          pagina:12,       
+          style:{
+            background:'#0070C0',
+            color:"white"
+          }
+        },
+        {
           id:21,
           seccion:'Salud',
-          descripcion:'COMO ME PREVENGO, CANCER DE MAMA',                  
+          descripcion:'COMO ME PREVENGO, CANCER DE MAMA',       
+          pagina:13,             
           style:{
-            background:'#355EA8',
+            background:'rgb(65, 95, 134) ',
             color:"white"
           }
         },
         {
           id:23,
           seccion:'proximamente',
-          descripcion:'PROXIMAMENTE!',        
+          descripcion:'PROXIMAMENTE!',    
+          pagina:14,      
           style:{
             background:'#373737',
             color:"white"

@@ -36,9 +36,9 @@
 
   #lideres .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, .1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18rem, .1fr));
     justify-content: center;
-    height: 84vh;
+    height: 66vh;
   }
 
   #lideres .card {
@@ -141,7 +141,7 @@
 
     #lideres .cards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
         justify-content: center;
         height: 144vh;
     }

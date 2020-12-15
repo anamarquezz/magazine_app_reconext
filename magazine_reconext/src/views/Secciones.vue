@@ -2,16 +2,16 @@
   <div class="cards-wrapper">
 
     <div class="" v-for="seccion in secciones" :key="seccion.id">
-      <div class="card" :style="seccion.style" @click="click_seccion">
+      <div class="card" :style="seccion.style" @click="click_seccion(seccion.pagina)">
         <div class="pa-4 text-center">
-          <h1> {{seccion.descripcion}}</h1>
+          <h2> {{seccion.descripcion}}</h2>
         </div>
         <div class="text-right pa-4">
           <div>
-            <h3> {{seccion.seccion}}</h3>
+            <h4 class="color-t"> {{seccion.seccion}}</h4>
           </div>
           <div>
-            <h6> Página {{seccion.id}}</h6>
+            <h6> Página {{seccion.pagina}}</h6>
           </div>
 
         </div>
@@ -75,7 +75,7 @@
     mapActions,
     mapGetters
   } from "vuex";
-
+  import '@/assets/js/turn.min.js'
   export default {
     name: 'dashboard',
     components: {},
@@ -86,7 +86,8 @@
     },
     methods: {
       click_seccion(pagina) {
-        this.$router.push('/lideres');
+        //         this.$router.push('/lideres');
+        $("#magazine").turn("page", pagina);
       },
 
     }
@@ -99,10 +100,14 @@
 
   .cards-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    height: 100vh;
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));    
+    font-family: 'Courier New';    
+     
   }
 
+.color-t{
+  color:rgb(248, 226, 135)
+}
 
   .card {
     background-color: #eee;
