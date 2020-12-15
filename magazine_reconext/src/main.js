@@ -5,6 +5,7 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
 import VuePageTransition from 'vue-page-transition'
+import $ from 'jquery';
 
 Vue.use(VuePageTransition)
 

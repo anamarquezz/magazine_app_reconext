@@ -1,0 +1,61 @@
+.div-pages {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+
+  #Programas .child {
+    flex: 1 250px;
+    text-align: center;
+  }
+
+  #Programas .div-izq {
+    background-color: rgb(245, 245, 245);
+  }
+  
+  #Programas .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, .1fr));
+    justify-content: center;
+    height: 84vh;
+  }
+
+  #Programas .div-der {
+    background: rgb(223, 223, 223);
+    border-left: 1px solid rgb(202, 202, 202);
+  }
+
+  #Programas .titulo {
+    height: 5vh;
+    background: rgb(73, 73, 73);
+    color: white;
+    margin: 1rem;
+  }
+
+  #Programas .titulo h3 {
+    padding: 3px;
+    font-size: 1.5rem;
+  }
+
+
+
+  @media (max-width: 767px) {
+    .div-izq .div-der {
+      height: 100vh;
+    }
+
+    #Programas .cards {     
+      height: 73vh;
+    }
+
+    
+  #Programas .card-lider{ 
+    text-align: center;
+    display: grid;
+    margin: 4rem;
+   justify-content: center;
+   height: 65.7vh;
+   
+
+  }
+  }

@@ -11,13 +11,13 @@
       <div class="div-der">
 
         <div class="square" :style="rev.style" v-for="rev in revistas" :key="rev.id" @click="click_revista">
-          
-            <div class="pa-4">
-              <img src="@/assets/logo.png" width="55%" alt="logo-reconext">
-            </div>
-            <div class="text-right pa-4">
-              <h3> Edición {{rev.edicion}}</h3>
-            </div>       
+
+          <div class="pa-4">
+            <img src="@/assets/logo.png" width="55%" alt="logo-reconext">
+          </div>
+          <div class="text-right pa-4">
+            <h3> Edición {{rev.edicion}}</h3>
+          </div>
           <!--<div v-for="seccion in  Math.ceil(secciones.length / 3) " :key="seccion.id">
             <div :style="seccion.style" v-for="seccion in secciones.slice((seccion - 1) * 4, seccion * 4)"
               :key="seccion.id">
@@ -57,18 +57,17 @@
 
   export default {
     name: 'dashboard',
-    components: {       
-    },
+    components: {},
     computed: {
       ...mapState({
         revistas: "revistas",
         secciones: "secciones"
       })
     },
-      methods: {
-            click_revista() {
-                  this.$router.push('/secciones');     
-            },
+    methods: {
+      click_revista() {
+        this.$router.push('/secciones');
+      },
 
     }
   }
@@ -82,21 +81,27 @@
       "😺 🦄";
     width: 100vw;
     height: 100vh;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: minmax(150px, 25%) 1fr;
   }
 
   .div-izq {
-    grid-area: 😺;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+    grid-area: 😺;  
   }
 
-  .content{
-     position: fixed;
-  }
+   .div-izq .content {   
+    font: bold 12px Sans-Serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* background: #212121; */
+    /* color: #fff; */
+    padding: 0px;
+    margin: 18rem 19rem 0px 2rem;
+    line-height: 24px;
+    /* transform: rotate(-90deg); */
+    /* text-align: center; */
+    position: fixed;
+    align-content: center;
+}
 
   .div-der {
     grid-area: 🦄;
@@ -114,20 +119,48 @@
     flex: 1 1 38vh;
     margin: 1rem;
     min-width: 250px;
-    max-width: 20vw;
+    max-width: 15vw;
     justify-content: space-between;
     cursor: pointer;
-    
+
   }
 
 
-.square:hover{
-    transform:scale(1.05);
+  .square:hover {
+    transform: scale(1.05);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-}
+  }
 
-  .img-logo{
+  .img-logo {
     display: grid;
     align-content: center;
+  }
+
+  @media (max-width: 767px) {
+
+    .div-izq {
+      display: block;
+      position: relative;   
+        
+    }
+
+    .div-izq .content {   
+        font: bold 12px Sans-Serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #212121;
+    color: #fff;
+    padding: 0px;
+    margin: -25rem -1rem 25rem -20rem;
+    line-height: 24px;
+    transform: rotate(-90deg);
+    text-align: center;
+}
+    
+
+    .menu-revistas[data-v-22ba47ca] {
+      display: grid;
+      align-items: center;
+    }
   }
 </style>

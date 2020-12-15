@@ -1,10 +1,10 @@
 <template>
   <div class="cards-wrapper">
 
-    <div class="" v-for="seccion in secciones" :key="seccion.id" @click="click_revista">
-      <div class="card" :style="seccion.style"  @click="click_seccion">
+    <div class="" v-for="seccion in secciones" :key="seccion.id">
+      <div class="card" :style="seccion.style" @click="click_seccion">
         <div class="pa-4 text-center">
-            <h1> {{seccion.descripcion}}</h1>
+          <h1> {{seccion.descripcion}}</h1>
         </div>
         <div class="text-right pa-4">
           <div>
@@ -86,7 +86,7 @@
     },
     methods: {
       click_seccion(pagina) {
-          this.$router.push('/revista');     
+        this.$router.push('/lideres');
       },
 
     }
@@ -105,7 +105,7 @@
 
 
   .card {
-     background-color: #eee;    
+    background-color: #eee;
     height: 99%;
     display: flex;
     margin: 1px;
@@ -113,10 +113,10 @@
     flex-direction: column;
   }
 
-  .card:hover{
-    transform:scale(1.3);
+  .card:hover {
+    transform: scale(1.1);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-}
+  }
 
 
   @keyframes cardAnim {

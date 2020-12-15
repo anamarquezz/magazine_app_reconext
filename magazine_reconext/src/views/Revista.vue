@@ -1,72 +1,101 @@
 <template>
-  <flipbook class="flipbook" :pages="['array', 'of', 'image', 'URLs']"></flipbook>
+  <div>
+    <div id="magazine">
+      <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg" alt="" />
+      </div>
+      <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg" alt="" />
+      </div>
+      <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg" alt="" />
+      </div>
+      <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg" alt="" />
+      </div>
+      <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg" alt="" />
+      </div>
+      <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg" alt="" />
+      </div>
+    </div>
+    <div>
+      <v-row align="center" justify="space-around">
+       <div class="anterior" @click="anterior()">
+         
+        </div>
+        <div class="siguiente"  @click="siguiente()">
+          
+        </div>
+      </v-row>
+    </div>
+  </div>
 </template>
-
 <script>
-  // @ is an alias to /src
-  //import UserNavigation from '@/components/module_menus/UserNavigation.vue'
+  import '@/assets/js/turn.min.js'
 
-  import {
-    mapState,
-    mapActions,
-    mapGetters
-  } from "vuex";
-
-import Flipbook from 'flipbook-vue'
   export default {
-    name: 'dashboard',
-    components: {
-      Flipbook
-    },
-    computed: {
-      ...mapState({
-        secciones: "secciones"
-      })
-    },
+    name: "revista", 
     methods: {
-      actionpage(value) {
-        this.$router.push('/revista');
+      anterior() {
+       $("#magazine").turn("previous");
       },
+       siguiente() {
+        $("#magazine").turn("next");
+      }
+    },
+    mounted() {
 
-    }
-  }
+      $(window).ready(function () {
+       
+        $('#magazine').turn({
+          display: 'double',
+          acceleration: true,
+          gradients: !$.isTouch,
+          elevation: 50,
+          when: {
+            turned: function (e, page) {
+              /*console.log('Current view: ', $(this).turn('view'));*/
+            }
+          }
+        });
+      });
+      
+       $("#magazine").turn("resize");
+      $(window).bind('keydown', function (e) {
+
+        if (e.keyCode == 37)
+          $('#magazine').turn('previous');
+        else if (e.keyCode == 39)
+          $('#magazine').turn('next');
+
+      });
+    }   
+  };
 </script>
-<style scoped>
-  /*@import "../assets/css/global.css";*/
-
-
-
-  .cards-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    height: 100vh;
+<style lang="scss" scoped>
+  #magazine {
+    width: 1152px;
+    height: 752px;
   }
 
-
-  .card {
-    background-color: #eee;
-    height: 99%;
-    display: flex;
-    margin: 1px;
-    justify-content: space-evenly;
-    flex-direction: column;
+  #magazine .turn-page {
+    background-color: #ccc;
+    background-size: 100% 100%;
   }
 
-
-  @keyframes cardAnim {
-    0% {
-      opacity: 0
-    }
-
-    100% {
-      opacity: 1
-    }
-  }
-
-
-.flipbook {
-  width: 90vw;
-  height: 90vh;
+  .anterior{ 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: auto;
+    width: 36rem;
+    height: 947px;
+    z-index: 100;
 }
-
+  
+  .siguiente{
+  position: absolute;
+    overflow: hidden;
+    width: 576px;
+    height: 752px;
+    inset: 4px 46rem auto auto;
+    z-index: 101;
+  }
 </style>
