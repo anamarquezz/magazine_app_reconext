@@ -1,23 +1,29 @@
 <template>
-  <v-app>
-
-    <vue-page-transition>
-      <router-view />
-    </vue-page-transition>
-
+<div class="conta">
   <flipbook class="flipbook" :pages="pages" zooms="1" >    
   </flipbook>
-  </v-app>
-
+</div>
 </template>
 
 <script>
+  // @ is an alias to /src
+  //import UserNavigation
 import flipbook from 'flipbook-vue'
+  import {
+    mapState,
+    mapActions,
+    mapGetters
+  } from "vuex";
+
   export default {
-    name: 'App',
-
-    components: {},
-
+    name: 'dashboard',
+    components: {
+       flipbook
+    },
+    computed: {
+      ...mapState({            
+      })
+    },
     data() {
       return {
         pages:[
@@ -32,13 +38,16 @@ import flipbook from 'flipbook-vue'
             ] 
         };
     },
-  };
+    methods: {  
+    }
+  }
 </script>
 <style scoped>
-
-#app{   
-    height: 100vh; 
-    background: rgb(41, 41, 41) !important;
-   
+  /*@import "../assets/css/global.css";*/
+.flipbook {
+  width: 95vw;
+  height: 95vh;
 }
+
+
 </style>

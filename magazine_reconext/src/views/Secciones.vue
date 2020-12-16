@@ -75,7 +75,7 @@
     mapActions,
     mapGetters
   } from "vuex";
-  import '@/assets/js/turn.min.js'
+  /*import '@/assets/js/turn.min.js'*/
   export default {
     name: 'dashboard',
     components: {},
@@ -101,8 +101,7 @@
   .cards-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));    
-    font-family: 'Courier New';    
-     
+    font-family: 'Courier New';       
   }
 
 .color-t{

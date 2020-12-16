@@ -2,7 +2,7 @@
   <div class="magazine-viewport" v-resize="onResize">
     <div class="container">
       <div id="magazine">
-        
+
         <div class="page">
           <Secciones></Secciones>
         </div>
@@ -13,10 +13,16 @@
           <Quenoseteolvide></Quenoseteolvide>
         </div>
         <div class="page">
-          <lideres></lideres>
+          <programas></programas>
         </div>
         <div class="page">
-          <Quenoseteolvide></Quenoseteolvide>
+          <yosoyr></yosoyr>
+        </div>
+        <div class="page">
+          <sabiasque></sabiasque>
+        </div>
+           <div class="page">
+          <Alrededormundo></Alrededormundo>
         </div>
       </div>
       <!--div>
@@ -37,19 +43,41 @@
   import Secciones from "@/views/Secciones";
   import lideres from "@/views/Lideres";
   import Quenoseteolvide from "@/views/Quenoseteolvide";
-  import '@/assets/js/turn.min.js'
+  import programas from "@/views/Programas";
+  import yosoyr from "@/views/YosoyR";
+  import Sabiasque from "@/views/Sabiasque";
+  import Alrededormundo from "@/views/Alrededormundo";
+  
+  /*import '@/assets/js/turn.min.js'*/
   export default {
     name: "revista",
     components: {
       Dashboard,
       Secciones,
       lideres,
-      Quenoseteolvide
+      Quenoseteolvide,
+      programas,
+      yosoyr,
+      Sabiasque,
+      Alrededormundo
     },
     data() {
       return {
         isMobile: false
       };
+    },
+    computed: {
+      onResize() {
+        if (window.innerWidth < 910){
+          this.isMobile = true;
+           var a = $('#magazine');
+           console.log(a)
+        }
+        else this.isMobile = false;
+
+        
+        
+      }
     },
     methods: {
       anterior() {
@@ -58,10 +86,7 @@
       siguiente() {
         $("#magazine").turn("next");
       },
-      onResize() {
-        if (window.innerWidth < 910) this.isMobile = true;
-        else this.isMobile = false;
-      }
+
     },
     mounted() {
       var me = this;
@@ -96,7 +121,7 @@
   .magazine-viewport {
     overflow: hidden;
     width: 100%;
-    height: 16.5vh;
+    height: 18vh;
   }
 
   .magazine-viewport .container {
@@ -108,12 +133,12 @@
 
   .magazine-viewport .magazine {
     width: 922px;
-    height: 16.5vh;
+    height: 18vh;
   }
 
   .magazine-viewport .page {
     width: 61px;
-    height: 16.5vh;
+    height: 18vh;
     background-color: rgb(238, 238, 238);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -167,5 +192,35 @@
     height: 752px;
     inset: 4px 46rem auto auto;
     z-index: 101;
+  }
+
+
+  @media (max-width: 767px) {
+    .magazine-viewport {
+      overflow: hidden;
+      width: 100%;
+      height: 40vh;
+    }
+
+    .magazine-viewport .container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    .magazine-viewport .magazine {
+      width: 922px;
+      height: 40vh;
+    }
+
+    .magazine-viewport .page {
+      width: 61px;
+      height: 40vh;
+      background-color: rgb(238, 238, 238);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
   }
 </style>

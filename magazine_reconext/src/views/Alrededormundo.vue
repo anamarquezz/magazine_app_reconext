@@ -1,20 +1,28 @@
 <template>
-  <div id="quenoseteolvide" class="div-pages">
+  <div id="Alrededormundo" class="div-pages">
 
     <div class="div-izq child">
       <div class="titulo">
-        <h3>QUE NO SE TE OLVIDE</h3>
+        <h3>RECONEXT Al rededor del mundo</h3>
       </div>
       <div class="contenido">
 
         <div class="subtitulo">
-          <h2>Me cuido, Te cuido</h2>
+          <p>Los datos de nuestros clientes son el activo más valioso que tenemos bajo nuestra custodia. Para protegerlo, continuamos mejorando nuestros procesos de seguridad de datos.</p>
         </div>
-        <div class="box-video">
-         <iframe width="60%" height="400px" src="https://www.youtube.com/embed/SVQpEiOWIhE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="box-video">          
+            <p></p>
         </div>
         <div class="box-decripcion">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <div class="child">
+            <img src="@/assets/img/alrededor.png" alt="" width="400">
+            </div>
+          <div class="child">
+            <p><b>Nombre:</b>"Lorem ipsum dolor sit amet</p>
+          <p><b>Puesto:</b>"Lorem ipsum dolor sit amet</p>
+          <p><b>Departamento:</b>"Lorem ipsum dolor sit amet</p>
+          <p><b>Antiguedad:</b>"Lorem ipsum dolor sit amet</p>
+          </div>
         </div>
       </div>
       <div class="numero-pagina">
@@ -51,13 +59,10 @@
   } from "vuex";
 
   export default {
-    name: "lideres",
+    name: "Alrededormundo",
     data() {
       return {
-        seleccionado: {
-          nombre: "",
-          imagen: "",
-          puesto: "",
+        seleccionado: {         
         }
       };
     },
@@ -82,6 +87,6 @@
   };
 </script>
 <style lang="scss" scoped>
-  @import "../assets/css/quenoseteolvide.css";
+  @import "../assets/css/alrededormundo.css";
   @import "../assets/css/global.css";
 </style>

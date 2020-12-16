@@ -47,7 +47,7 @@ export default new Vuex.Store({
           id:1,
           seccion:'lideres',
           descripcion:'NUESTROS LIDERES',        
-          pagina:3,
+          pagina:2,
           style:{
             background:'#0070C0',
             color:"white"
@@ -58,7 +58,7 @@ export default new Vuex.Store({
           id:3,
           seccion:'nosete',
           descripcion:'QUE NO SE TE OLVIDE',                 
-          pagina:4,
+          pagina:3,
           style:{
             background:'rgb(65, 95, 134) ',
             color:"white"
@@ -68,7 +68,7 @@ export default new Vuex.Store({
           id:5,
           seccion:'programas',
           descripcion:'PROGRAMAS, DONACION INTERNA COMPUTADORAS',
-          pagina:5,        
+          pagina:4,        
           style:{
             background:'#373737',
             color:"white"
@@ -76,9 +76,9 @@ export default new Vuex.Store({
         },
         {
           id:7,
-          seccion:'yosoy',
+          seccion:'YosoyR',
           descripcion:'YO SOY RECONEXT',   
-          pagina:6,     
+          pagina:5,     
           style:{
             background:'#0070C0',
             color:"white"
@@ -86,9 +86,9 @@ export default new Vuex.Store({
         },
         {
           id:9,
-          seccion:'sabias',          
+          seccion:'sabiasque',          
           descripcion:'¿SABIAS QUE?',        
-          pagina:7,
+          pagina:6,
           style:{
             background:'rgb(65, 95, 134) ',
             color:"white"           
@@ -96,10 +96,10 @@ export default new Vuex.Store({
         },
         {
           id:11,
-          seccion:'mundo',
+          seccion:'alrededormundo',
          
           descripcion:'ALREDEDOR DEL MUNDO',  
-          pagina:8,     
+          pagina:7,     
           style:{
             background:'#373737',
             color:"white"
@@ -109,7 +109,7 @@ export default new Vuex.Store({
           id:13,
           seccion:'seguridad',
           descripcion:'ASEGURA TU SEGURIDAD',  
-          pagina:9,          
+          pagina:8,          
           style:{
             background:'#0070C0',
             color:"white"
@@ -119,7 +119,7 @@ export default new Vuex.Store({
           id:15,
           seccion:'vacantes',
           descripcion:'VACANTES',
-          pagina:10,          
+          pagina:9,          
           style:{
             background:'rgb(65, 95, 134) ',
             color:"white"

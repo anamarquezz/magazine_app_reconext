@@ -1,44 +1,16 @@
-.div-pages {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
-    transform-style: preserve-3d;
-    
-  }
 
-  #lideres .child {
-    flex: 1 250px;
-    text-align: center;
-  }
-
-  #lideres .div-izq {
-    background-color: rgb(245, 245, 245);
-
-
-  }
 
   #lideres .div-der {
     background: rgb(223, 223, 223);
     border-left: 1px solid rgb(202, 202, 202);
   }
 
-  #lideres .titulo {
-    height: 5vh;
-    background: rgb(73, 73, 73);
-    color: white;
-    margin: 1rem;
-  }
-
-  #lideres .titulo h3 {
-    padding: 3px;
-    font-size: 1.5rem;
-  }
-
+ 
   #lideres .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, .1fr));
     justify-content: center;
-    height: 66vh;
+    height:  76vh;;
   }
 
   #lideres .card {
@@ -61,11 +33,11 @@
   }
 
   .top-card {
-    height: 6rem;
+    height: 5.8rem;
   }
 
   .top-bottom {
-    height: 4rem;
+    height: 6rem;
   }
 
   .puesto {
@@ -99,8 +71,7 @@
       height: 2rem;
       margin: 1rem;     
       text-align: right;      
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
   }
 
 
@@ -143,7 +114,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
         justify-content: center;
-        height: 144vh;
+        height: 86vh;
     }
 
   }

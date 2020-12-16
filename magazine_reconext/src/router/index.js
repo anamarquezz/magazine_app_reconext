@@ -5,6 +5,8 @@ import Secciones from '../views/Secciones.vue'
 import Revista from '../views/Revista.vue' 
 import Lideres from '../views/Lideres.vue'
 import Quenoseteolvide from '../views/Quenoseteolvide.vue'
+import Programas from '../views/Programas.vue'
+import flipbook from '../views/flipbook.vue';
 
 
 Vue.use(VueRouter)
@@ -12,6 +14,12 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    name: 'flipbook',
+    component: flipbook,
+    meta:{transition:'flip-y'}
+  }, /*
+  {
+    path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard,
     meta:{transition:'flip-y'}
@@ -34,12 +42,19 @@ const routes = [
     component: Lideres,
    meta: { transition: 'flip-y' },
   },
+  
   {
     path: '/quenoseteolvide',
     name: 'Quenoseteolvide',
     component: Quenoseteolvide,
     meta: { transition: 'flip-y' },
-  } 
+  },
+  {
+    path: '/programas',
+    name: 'Programas',
+    component: Programas,
+   meta: { transition: 'flip-y' },
+  },*/
 
   
 ]

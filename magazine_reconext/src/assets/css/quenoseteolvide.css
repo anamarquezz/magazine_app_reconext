@@ -1,55 +1,30 @@
-#Programas .div-pages {
-    display: flex;
-    flex-wrap: wrap;
+#quenoseteolvide .div-der {
+  background: rgb(223, 223, 223);
+  border-left: 1px solid rgb(202, 202, 202);
+}
+
+
+
+#quenoseteolvide .box-description {
+  height: 6vh;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .div-izq .div-der {
     height: 100vh;
   }
 
-  #Programas .child {
-    flex: 1 250px;
-    text-align: center;
-  }
 
-  #Programas .div-izq {
-    background-color: rgb(245, 245, 245);
-  }
-  
-
-  #Programas .div-der {
-    background: rgb(223, 223, 223);
-    border-left: 1px solid rgb(202, 202, 202);
-  }
-
-  #Programas .titulo {
-    height: 5vh;
-    background: rgb(73, 73, 73);
-    color: white;
-    margin: 1rem;
-  }
-
-  #Programas .box-description{
-    height: 5vh;
-  }
-
-  #Programas .titulo h3 {
-    padding: 3px;
-    font-size: 1.5rem;
-  }
-
-
-
-  @media (max-width: 767px) {
-    .div-izq .div-der {
-      height: 100vh;
-    } 
-
-    
-  #Programas .card-lider{ 
+  #quenoseteolvide .card-lider {
     text-align: center;
     display: grid;
     margin: 4rem;
-   justify-content: center;
-   height: 65.7vh;
-   
+    justify-content: center;
+    height: 65.7vh;
+
 
   }
-  }
+}
