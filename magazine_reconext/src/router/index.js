@@ -6,7 +6,7 @@ import Revista from '../views/Revista.vue'
 import Lideres from '../views/Lideres.vue'
 import Quenoseteolvide from '../views/Quenoseteolvide.vue'
 import Programas from '../views/Programas.vue'
-import flipbook from '../views/flipbook.vue';
+import fllipbook from '../views/fllipbook.vue';
 
 
 Vue.use(VueRouter)
@@ -14,8 +14,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'flipbook',
-    component: flipbook,
+    name: 'fllipbook',
+    component: fllipbook,
     meta:{transition:'flip-y'}
   }, /*
   {
